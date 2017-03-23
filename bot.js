@@ -6,15 +6,15 @@ var botID = process.env.BOT_ID;
 
 function respond() {
     var request = JSON.parse(this.req.chunks[0]),
-        botRegex = /^Coors?$/;
-    botRegex = /^Coors lab?$/;
-    botRegex = /^Anyone wanna go to coors lab?$/;
-    botRegex = /^Currs?$/;
-    botRegex = /^Lab?$/;
-    botRegex = /^Coors?$/;
-    botRegex = /^tour?$/;
-    botRegex = /^coors lab?$/;
-    botRegex = /^Coors lab?$/;
+        botRegex = /^\Coors?$/;
+        botRegex = /^\Coors lab?$/;
+        botRegex = /^\Anyone wanna go to coors lab?$/;
+        botRegex = /^\Currs?$/;
+        botRegex = /^\Lab?$/;
+        botRegex = /^\Coors?$/;
+        botRegex = /^\tour?$/;
+        botRegex = /^\coors lab?$/;
+        botRegex = /^\Coors lab?$/;
 
     if (request.text && botRegex.test(request.text)) {
         if (n = 3) {
